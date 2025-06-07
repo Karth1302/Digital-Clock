@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #111111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: bold;
+    background-image: url("4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.digital-clock {
+    text-align: center;
+    background: linear-gradient(135deg, #222, #444);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    color: #ffffff;
+    font-size: 24px;
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+
+.week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.week div {
+    padding: 5px 14px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
+    cursor: default;
+}
+
+.week div:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ffcc33);
+    color: #ffffff;
+}
+
+.week .inactive {
+    background: linear-gradient(90deg, #555, #777);
+    color: #aaa;
+}
+.week .active {
+    background: linear-gradient(90deg, #00ffcc, #00bfff);
+    color: #000;
+}
+
+.week .sun { background: linear-gradient(90deg, #ff4b2b, #ff416c); color: #fff; }
+.week .mon { background: linear-gradient(90deg, #ffb347, #ffcc33); color: #222; }
+.week .tue { background: linear-gradient(90deg, #00bfff, #1e90ff); color: #fff; }
+.week .wed { background: linear-gradient(90deg, #7fff00, #32cd32); color: #000; }
+.week .thu { background: linear-gradient(90deg, #9370db, #8a2be2); color: #fff; }
+.week .fri { background: linear-gradient(90deg, #ff69b4, #ff1493); color: #000; }
+.week .sat { background: linear-gradient(90deg, #00ffcc, #40e0d0); color: #000; }
+
+.time {
+    font-size: 48px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.time div:nth-child(1) { color: #ff4b2b; }
+.time div:nth-child(3) { color: #ffb347; }
+.time div:nth-child(5) { color: #00bfff; }
+.time div:nth-child(7) { color: #7fff00; }
+.time div:nth-child(9) { color: #9370db; }
+
+.today-label {
+    font-size: 24px;
+    padding: 5px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 20px;
+    width: 60px;
+    user-select: none;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    transition: background 0.3s, color 0.3s;
+    cursor: default;
+}
+
+
+.today-label {
+    background: linear-gradient(90deg, #83d1e4, #ffcc33);
+    color: #000000;
+}
+
+.clock-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.date {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(90deg, #ff4b2b, #ffcc33, #00bfff, #7fff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
